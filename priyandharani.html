@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Princess ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      overflow-x:hidden;
+      background:black
+      ṁ;
+      color:white;
+      position:relative;
+    }
+
+    video{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-2;
+      filter:brightness(0.35);
+    }
+
+    .overlay{
+      position:fixed;
+      width:100%;
+      height:100%;
+      background:linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,105,180,0.2));
+      z-index:-1;
+    }
+
+    .container{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:30px;
+    }
+
+    h1{
+      font-size:5rem;
+      font-family:'Great Vibes',cursive;
+      animation:glow 2s infinite alternate;
+    }
+
+    .nickname{
+      color:#ffb6d9;
+    }
+
+    .typewriter{
+      margin-top:20px;
+      font-size:1.5rem;
+      max-width:900px;
+      line-height:1.8;
+      overflow:hidden;
+      border-right:3px solid white;
+      white-space:nowrap;
+      animation:typing 7s steps(90,end), blink .8s infinite;
+    }
+
+    .btn{
+      margin-top:40px;
+      padding:16px 40px;
+      border:none;
+      border-radius:50px;
+      font-size:1.1rem;
+      background:linear-gradient(45deg,#ff4f81,#ff84a1);
+      color:white;
+      cursor:pointer;
+      transition:0.4s;
+      box-shadow:0 0 25px rgba(255,105,180,0.5);
+    }
+
+    .btn:hover{
+      transform:scale(1.1);
+      box-shadow:0 0 40px rgba(255,105,180,0.9);
+    }
+
+    .letter{
+      margin-top:40px;
+      width:90%;
+      max-width:850px;
+      padding:35px;
+      border-radius:25px;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      line-height:2;
+      font-size:1.15rem;
+      display:none;
+      animation:fadeIn 2s ease;
+      box-shadow:0 0 30px rgba(255,255,255,0.15);
+    }
+
+    .heart{
+      position:absolute;
+      color:#ff6fa5;
+      font-size:20px;
+      animation:float 6s linear infinite;
+    }
+
+    .counter{
+      margin-top:25px;
+      font-size:1.2rem;
+      color:#ffd6e7;
+    }
+
+    .footer{
+      margin-top:50px;
+      opacity:0.8;
+      font-size:0.95rem;
+    }
+
+    @keyframes typing{
+      from{width:0}
+      to{width:100%}
+    }
+
+    @keyframes blink{
+      50%{border-color:transparent}
+    }
+
+    @keyframes glow{
+      from{text-shadow:0 0 10px #ff7eb3}
+      to{text-shadow:0 0 30px #fff}
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(100vh) scale(0.5);
+        opacity:0;
+      }
+      20%{opacity:1}
+      100%{
+        transform:translateY(-100px) scale(1.5);
+        opacity:0;
+      }
+    }
+
+    @media(max-width:768px){
+      h1{
+        font-size:3.2rem;
+      }
+
+      .typewriter{
+        white-space:normal;
+        border:none;
+        animation:none;
+        font-size:1.1rem;
+      }
+
+      .letter{
+        font-size:1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <!-- Music -->
+  <audio autoplay loop>
+    <source src="Gul.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+
+    <h1> luviiiii uuuu  <span class="nickname">Dharani maa 🩷</span></h1>
+    <div class="typewriter">
+      nee evolo azhagu theriyuma intha azhagu enna kalyanam pannikum ah ???  ✨
+    </div>
+
+    <div class="counter" id="daysCounter"></div>
+
+    <button class="btn" onclick="openLetter()">
+      Open My Heart 💌
+    </button>
+
+    <div class="letter" id="letter">
+      Dharani maa 🩷<br><br>
+
+      From the day you came into my life,
+      everything started feeling more beautiful and i started feeling you and your presence even though the distance between us is 500kms ✨<br><br>
+
+      Your smile became my happiness,
+      your voice became my comfort,
+      and your love became my strength 🩷<br><br>
+
+      Even when life becomes hard,
+      one thing I promise is...
+      I will always stay beside you no matter what 🌍🩷<br><br>
+
+      Thank you for loving me,
+      caring for me,
+      and making my life special every single day 🫶🏻<br><br>
+
+     nee enaku kedaika naan enna pannen nu thrla but kedachita romba happy theriyuma🥹🩷<br><br>
+
+      
+       enkudave eru enna thaniya vittu engaiyum pogatha please nee enga ponalum ennaiyum kootitu poidu naanum unkudave vanthudren 🥹<br><br>
+
+      Forever Yours,<br>
+       unnoda priya 🩷<br>
+       luviiii uuuuuu💋💋💋<br>
+       ummmaaaahhhh💋💋<br>
+    </div>
+
+    <div class="footer">
+      Made with my endless love♾️🩷
+    </div>
+
+  </div>
+
+  <script>
+
+    function openLetter(){
+      document.getElementById('letter').style.display='block';
+      document.getElementById('letter').scrollIntoView({behavior:'smooth'});
+    }
+
+    
+    function createHeart(){
+      const heart=document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML='❤';
+      heart.style.left=Math.random()*100+'vw';
+      heart.style.fontSize=Math.random()*25+15+'px';
+      heart.style.animationDuration=Math.random()*3+4+'s';
+
+      document.body.appendChild(heart);
+
+      setTimeout(()=>{
+        heart.remove();
+      },7000);
+    }
+
+    setInterval(createHeart,250);
+
+    
+    const startDate = new Date('2026-01-30');
+    const today = new Date();
+
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+    document.getElementById('daysCounter').innerHTML =
+      'its been ' + diffDays + ' Days since we started our jouney together 🩷';
+
+  </script>
+
+</body>
+</html>
